@@ -1,0 +1,10 @@
+*.zip
+.vscode
+
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+
+
+rootkey.csv
+minhaj_iam1_accessKeys.csv
