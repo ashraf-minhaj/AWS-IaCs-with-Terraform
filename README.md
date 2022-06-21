@@ -1,4 +1,4 @@
-# IASs with Terraform
+# IACs with Terraform
  Testing and learning Terraform Infrastructure As Code with AWS services
 
 This is an incremental process of making things from the beginning.
