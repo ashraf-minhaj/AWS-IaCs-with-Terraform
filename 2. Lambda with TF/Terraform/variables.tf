@@ -17,17 +17,9 @@ variable "component_name" {
   default = "back-bencher"
 }
 
-# variable "bucket_name" {
-# 	default = "min-test-files"
-# }
-
 # store the zip file here
 variable "bucket_name" {
 	default = "back-bencher-f"
-}
-
-variable "aws_s3_bucket_acl" {
-    default = "private"
 }
 
 variable "archive_file_type" {

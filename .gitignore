@@ -8,3 +8,5 @@ terraform.tfstate.backup
 
 rootkey.csv
 minhaj_iam1_accessKeys.csv
+1. Create S3 Bucket with TF/Terraform/.terraform.lock.hcl
+2. Lambda with TF/Terraform/.terraform.lock.hcl
