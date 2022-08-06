@@ -10,7 +10,6 @@ rootkey.csv
 minhaj_iam1_accessKeys.csv
 1. Create S3 Bucket with TF/Terraform/.terraform.lock.hcl
 2. Lambda with TF/Terraform/.terraform.lock.hcl
-3. Rest API/Terraform/.terraform.lock.hcl
 Dynamodb/Terraform/.terraform.lock.hcl
 3. Create API/Terraform/.terraform.lock.hcl
 4. API Gateway and Lambda/Terraform/.terraform.lock.hcl
