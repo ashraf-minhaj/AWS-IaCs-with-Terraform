@@ -12,3 +12,5 @@ minhaj_iam1_accessKeys.csv
 2. Lambda with TF/Terraform/.terraform.lock.hcl
 3. Rest API/Terraform/.terraform.lock.hcl
 Dynamodb/Terraform/.terraform.lock.hcl
+3. Create API/Terraform/.terraform.lock.hcl
+4. API Gateway and Lambda/Terraform/.terraform.lock.hcl
