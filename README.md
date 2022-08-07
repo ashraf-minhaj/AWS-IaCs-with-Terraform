@@ -33,4 +33,4 @@ If you wish to delete infrastructures after playing:
 `$ terraform destroy`
 
 ##### Ashraf Minhaj
-##### Find me on LinkedIn[Ashraf Minhaj](https://www.linkedin.com/in/ashraf-minhaj/)
+##### Find me on LinkedIn [Ashraf-Minhaj](https://www.linkedin.com/in/ashraf-minhaj/)
