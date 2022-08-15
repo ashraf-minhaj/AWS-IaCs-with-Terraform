@@ -4,3 +4,9 @@
 *.hcl
 *.tfstate
 *.backup
+
+Aws Lambda n Selenium/files/*
+!Aws Lambda n Selenium/files/image_downloader.py
+!Aws Lambda n Selenium/files/requirements.txt
+*.0_x5
+.DS_Store

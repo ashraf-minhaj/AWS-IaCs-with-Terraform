@@ -1,0 +1,18 @@
+# command to install in current directory-
+# pip3 install -r requirements.txt -t "/Users/ashrafminhaj/Documents/github/AWS-IaCs-with-Terraform/Aws Lambda n Selenium/files/"
+
+selenium
+webdriver_manager
+requests
+
+# for linux nerds -
+# wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip -OutFile .\chromedriver.zip
+# wget https://github.com/adieuadieu/serverless-chrome/releases/download/v1.0.0-54/stable-headless-chromium-amazonlinux-2017-03.zip -OutFile .\headless-chromium.zip
+# Expand-Archive .\headless-chromium.zip
+# rm *.zip
+
+# for Mac rich kids (tested), mind the space after - -
+# wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip - OutFile /chromedriver.zip
+# wget https://github.com/adieuadieu/serverless-chrome/releases/download/v1.0.0-54/stable-headless-chromium-amazonlinux-2017-03.zip - OutFile /headless-chromium.zip
+# unzip /headless-chromium.zip
+# rm *.zip
