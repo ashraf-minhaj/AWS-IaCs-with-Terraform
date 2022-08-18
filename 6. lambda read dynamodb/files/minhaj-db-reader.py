@@ -2,8 +2,12 @@
 import json
 import logging
 import boto3
+from boto3.dynamodb.conditions import Key
 
 table_name = 'data3'
+
+partition_key = "date"
+value = "12-12-12"
 
 # initialize logger
 logger = logging.getLogger()
@@ -19,8 +23,18 @@ table = db.Table(table_name)
 def query_handler(event, context):
     logger.info(f"request got {event}")
 
-    data = table.scan()
-    logger.info(f"data, type {type(data)}: {data}")
+    # scan gets all data
+    # data = table.scan()
+    # logger.info(f"data, type {type(data)}: {data}")
+
+    logger.info(f"Performing Query for {partition_key} with {value}")
+
+    response = table.query(
+    KeyConditionExpression=Key(partition_key).eq(value)
+    )
+
+    logger.info(f"data type: {type(response)}, response data: {response}")
+
 
     # TODO implement
     return {
