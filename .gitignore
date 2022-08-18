@@ -10,3 +10,6 @@ Aws Lambda n Selenium/files/*
 !Aws Lambda n Selenium/files/requirements.txt
 *.0_x5
 .DS_Store
+
+6. lambda read dynamodb/files/*
+!6. lambda read dynamodb/files/minhaj-db-reader.py
