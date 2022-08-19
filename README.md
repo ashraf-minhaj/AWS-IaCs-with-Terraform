@@ -7,6 +7,7 @@
 * python file -> zip -> up to s3 -> create a lambda function (tested)
 * AWS API Gateway Rest API with Lambda (tested)
 * Dynamodb scan, perform query using Python Lambda (tested)
+* Dynamodb PutItem using Python Lambda (tested)
 * Dynamodb data manipulation with Python
 * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
 * (NEXT) EC2
@@ -30,7 +31,8 @@ To run -
 
 `$ terraform apply`
 
-If you wish to delete infrastructures after playing: 
+If you wish to delete infrastructures after playing:
+ 
 `$ terraform destroy`
 
 ##### Ashraf Minhaj
