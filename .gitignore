@@ -17,3 +17,4 @@ Aws Lambda n Selenium/files/*
 7. lambda put item dynamodb table/files/*
 !6. lambda put item dynamodb table/files/minhaj-db-writer.py
 !6. lambda put item dynamodb table/files/requirements.txt
+*.1_x5
