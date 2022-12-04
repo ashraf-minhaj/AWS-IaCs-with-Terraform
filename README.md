@@ -13,7 +13,7 @@
 * (NEXT) EC2
 * (NEXT) API Gatway -> SNS -> Lambda
 * (NEXT) Fully functional Serverless Application 
-
+* Packer - done
 #### Projects
 * Idiot API: a serverless application that returns random illogical responses to irritate you.
 Tech: APIGW, Lambda, S3, CloudWatch, Python3
