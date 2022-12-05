@@ -1,6 +1,9 @@
 # IaCs with Terraform
  Testing and learning Terraform Infrastructure As Code with AWS services
 
+![](https://img.shields.io/badge/Terraform-Version%201.3.3-white?style=plastic&logo=terraform)&nbsp; 
+![](https://img.shields.io/badge/Python-Version%203.10-yellow?style=plastic&logo=python)&nbsp;
+![](https://img.shields.io/badge/Packer-Version%20%3E=%200.0.2-blue?style=plastic&logo=packer)&nbsp;
 
 #### Making aws infrastructures with Terraform:
 * create s3 bucket  (tested)

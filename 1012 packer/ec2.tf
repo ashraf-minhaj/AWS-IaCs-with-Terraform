@@ -10,6 +10,7 @@ data "aws_ami" "ami" {
 output "ami_id" {
   value = data.aws_ami.ami.id
 }
+
 resource "aws_instance" "myEc2" {
   ami = data.aws_ami.ami.id
   instance_type = "t2.micro"
