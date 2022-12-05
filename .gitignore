@@ -1,7 +1,6 @@
 
 *.exe
 *.zip
-*.hcl
 *.tfstate
 *.backup
 
@@ -18,5 +17,10 @@ Aws Lambda n Selenium/files/*
 !6. lambda put item dynamodb table/files/minhaj-db-writer.py
 !6. lambda put item dynamodb table/files/requirements.txt
 *.1_x5
-
-!1012 packer test/aws-ubuntu.pkr.hcl
+1005. Create Dynamodb db/Terraform/.terraform.lock.hcl
+1006. lambda read dynamodb/Terraform/.terraform.lock.hcl
+1007. lambda put item dynamodb table/Terraform/.terraform.lock.hcl
+1008. lambda ec2 waker/Terraform/.terraform.lock.hcl
+1012 packer/.terraform.lock.hcl
+!1012 packer/aws-ubuntu.pkr.hcl
+Aws Lambda n Selenium/Terraform/.terraform.lock.hcl
