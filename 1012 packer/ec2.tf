@@ -3,7 +3,7 @@ data "aws_ami" "ami" {
   owners = ["self"]
   filter {
     name = "name"
-    values = ["learn-packer-linux-aws"]
+    values = ["test-ami"]
   }
 }
 
@@ -14,7 +14,7 @@ output "ami_id" {
 resource "aws_instance" "myEc2" {
   ami = data.aws_ami.ami.id
   instance_type = "t2.micro"
-  key_name      = "----key"
+  key_name      = "mars-mariner-transcoder-key"
   vpc_security_group_ids = [
     "launch-wizard-18"
   ]
