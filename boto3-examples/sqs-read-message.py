@@ -3,8 +3,7 @@ import boto3
 MAX_MESSAGE     = 1
 WAIT_INTERVAL   = 15
 
-# queue = f"https://sqs.ap-southeast-1.amazonaws.com/owner-id/queue-name"
-queue = "https://sqs.ap-southeast-1.amazonaws.com/669201380121/mars-mariners-jobs-dev.fifo"
+queue = f"https://sqs.ap-southeast-1.amazonaws.com/owner-id/queue-name"
 sqs_client = boto3.client("sqs", region_name="ap-southeast-1")
 
 response = sqs_client.receive_message(
