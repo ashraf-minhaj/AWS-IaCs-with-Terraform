@@ -20,7 +20,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 # In Discord, select the Server, under Text Channels, select Edit Channel (gear icon) 
 # Select Integrations > View Webhooks and click New Webhook. Copy the Webhook URL.
 # ref: https://docs.netapp.com/us-en/cloudinsights/task_webhook_example_discord.html#:~:text=In%20Discord%2C%20select%20the%20Server,Copy%20the%20Webhook%20URL.
-webhook_url = 'https://discord.com/api/webhooks/1qBF7gH08i'
+webhook_url = 'https://discord.com/api/webhooks/---------'
 
 # image url to attach
 img_url = 'https://images.unsplash.com/photo-1591497108596-436c1a1a5c8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
@@ -38,7 +38,7 @@ user_id = 640432483250208788
 webhook = DiscordWebhook(url=webhook_url)
 
 # create embed object for webhook
-embed = DiscordEmbed(title='Error Found', description=f'<@{user_id}> Error in line no. 49', color='AA4A44')
+embed = DiscordEmbed(title='Error Found', description=f'<@{user_id}> Error in line no. 49', color='03b2f8')
 
 # set image
 embed.set_image(url=img_url)
