@@ -11,6 +11,6 @@ def func1_handler(event, context):
     
     # TODO implement
     return {
-        'statusCode': 200,
+        'statusCode': 403,
         'body': json.dumps('this is lambda 1')
     }

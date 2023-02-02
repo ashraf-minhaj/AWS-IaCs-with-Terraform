@@ -60,6 +60,7 @@ resource "aws_s3_object" "lambda2_object" {
   bucket            = "${aws_s3_bucket.s3_bucket.bucket}"
   key               = "${var.lamba2_s3_key}"
   source            = data.archive_file.lamda2_source.output_path
+  source_hash       = "${data.archive_file.lamda2_source.output_base64sha256}"
 }
 
 # connect this lambda with uploaded s3 zip file
@@ -67,11 +68,12 @@ resource "aws_s3_object" "lambda2_object" {
 # "${aws_s3_bucket_object.file_upload.key}"
 # resource - resource_name
 resource "aws_lambda_function" "lambda2" {
-    function_name   = "${var.component_prefix}-${var.lambda2_name}"
-    s3_bucket       = aws_s3_object.lambda2_object.bucket
-    s3_key          = aws_s3_object.lambda2_object.key
-    role            = aws_iam_role.lambda2_role.arn 
-    handler         = "${var.component_prefix}-${var.lambda2_name}.${var.lambda2_handler}"
-    runtime         = "${var.lambda_runtime}"
-    timeout			    = "${var.lambda_timeout}"
+    function_name     = "${var.component_prefix}-${var.lambda2_name}"
+    source_code_hash  = "${data.archive_file.lamda2_source.output_base64sha256}"
+    s3_bucket         = aws_s3_object.lambda2_object.bucket
+    s3_key            = aws_s3_object.lambda2_object.key
+    role              = aws_iam_role.lambda2_role.arn 
+    handler           = "${var.component_prefix}-${var.lambda2_name}.${var.lambda2_handler}"
+    runtime           = "${var.lambda_runtime}"
+    timeout			      = "${var.lambda_timeout}"
 }
