@@ -12,6 +12,11 @@
 * Dynamodb scan, perform query using Python Lambda (tested)
 * Dynamodb PutItem using Python Lambda (tested)
 * Dynamodb data manipulation with Python
+* lambda create ec2 instance
+* lambda start ec2 instance
+* ec2 provision local files
+* read, delete sqs message
+* step function with lambda
 * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
 * (NEXT) EC2
 * (NEXT) API Gatway -> SNS -> Lambda
