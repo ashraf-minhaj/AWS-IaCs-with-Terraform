@@ -24,3 +24,4 @@ Aws Lambda n Selenium/files/*
 1012 packer/.terraform.lock.hcl
 !1012 packer/aws-ubuntu.pkr.hcl
 Aws Lambda n Selenium/Terraform/.terraform.lock.hcl
+1014. step function/Terraform/.terraform.lock.hcl
