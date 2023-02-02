@@ -10,6 +10,11 @@ resource "aws_sfn_state_machine" "step_machine" {
         "function1": {
           "Type": "Task",
           "Resource": "${aws_lambda_function.lambda1.arn}",
+          "Next": "function2"
+        },
+        "function2": {
+          "Type": "Task",
+          "Resource": "${aws_lambda_function.lambda2.arn}",
           "End": true
         }
       }
