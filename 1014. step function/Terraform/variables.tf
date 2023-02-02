@@ -21,6 +21,10 @@ variable "lambda2_name" {
   default = "lambda2"
 }
 
+variable "lambdaErr_name" {
+  default = "lambdaErr"
+}
+
 # store the zip file here
 variable "bucket_name" {
 	default = "min-lambdas"
@@ -40,12 +44,21 @@ variable "lamba2_s3_key" {
   description = "Store zip file in this bucket path"
 }
 
+variable "lambaErr_s3_key" {
+  default     = "lambda/lambdaErr.zip"
+  description = "Store zip file in this bucket path"
+}
+
 variable "lambda1_handler" {
   default = "func1_handler"
 }
 
 variable "lambda2_handler" {
   default = "func2_handler"
+}
+
+variable "lambdaErr_handler" {
+  default = "error_handler"
 }
 
 variable "lambda_runtime" {

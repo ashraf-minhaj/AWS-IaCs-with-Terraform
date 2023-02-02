@@ -6,16 +6,11 @@ import logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
-def func1_handler(event, context):
+def error_handler(event, context):
     logger.info(f"request got {event}")
-    try:
-        print('shei')
-
-    except Exception as e:
-        raise e
     
     # TODO implement
     return {
-        'statusCode': 403,
-        'body': json.dumps('this is lambda 1')
+        'statusCode': 200,
+        'body': json.dumps('Bro Error Found!!!')
     }
