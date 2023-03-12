@@ -1,27 +1,42 @@
 # IaCs with Terraform
  Testing and learning Terraform Infrastructure As Code with AWS services
 
+-----------
+
+<div align="center">
+
 ![](https://img.shields.io/badge/Terraform-Version%201.3.3-white?style=plastic&logo=terraform)&nbsp; 
 ![](https://img.shields.io/badge/Python-Version%203.10-yellow?style=plastic&logo=python)&nbsp;
 ![](https://img.shields.io/badge/Packer-Version%20%3E=%200.0.2-blue?style=plastic&logo=packer)&nbsp;
 
+</div>
+
+----------
+
 #### Making aws infrastructures with Terraform:
 * create s3 bucket  (tested)
-* python file -> zip -> up to s3 -> create a lambda function (tested)
-* AWS API Gateway Rest API with Lambda (tested)
-* Dynamodb scan, perform query using Python Lambda (tested)
-* Dynamodb PutItem using Python Lambda (tested)
+* python file -> zip -> up to s3 -> create a lambda function
+* AWS API Gateway Rest API with Lambda
+* Dynamodb scan, perform query using Python Lambda 
+* Dynamodb PutItem using Python Lambda 
 * Dynamodb data manipulation with Python
-* lambda create ec2 instance
+* lambda create ec2 instance 
 * lambda start ec2 instance
 * ec2 provision local files
 * read, delete sqs message
 * step function with lambda
+* Packer - create AMI
+* lambda launch ec2
+* step function state machine with lambdas
+* s3 and event-bridge
+* terraform read environment variables
+
+#### May be next (just... may be)
 * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
 * (NEXT) EC2
 * (NEXT) API Gatway -> SNS -> Lambda
-* (NEXT) Fully functional Serverless Application 
-* Packer - done
+* (NEXT) Fully functional Serverless Application
+
 #### Projects
 * Idiot API: a serverless application that returns random illogical responses to irritate you.
 Tech: APIGW, Lambda, S3, CloudWatch, Python3
