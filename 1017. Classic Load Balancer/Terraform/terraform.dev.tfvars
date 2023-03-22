@@ -1,0 +1,5 @@
+aws_region          = "ap-southeast-1"
+component_postfix   = "dev"
+# instance_type       = "t2.medium"
+instance_type       = "t2.nano"
+subdomain_name      = "dev-api"
