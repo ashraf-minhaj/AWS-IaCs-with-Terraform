@@ -5,8 +5,8 @@ resource "aws_autoscaling_group" "asg" {
     max_size                        = 2
     min_size                        = 1
 
-    vpc_zone_identifier             = [ aws_subnet.phitron_vpc_pub1.id, 
-                                        aws_subnet.phitron_vpc_pub2.id  ]
+    vpc_zone_identifier             = [ aws_subnet.vpc_pub1.id, 
+                                        aws_subnet.vpc_pub2.id  ]
     health_check_type               = "ELB"
     load_balancers                  = [ aws_elb.load_balancer.id ]
     health_check_grace_period       = 100

@@ -1,7 +1,7 @@
 resource "aws_elb" "load_balancer" {
     name                        = "${local.component}-lb-${var.component_postfix}"
-    subnets                     = [ aws_subnet.phitron_vpc_pub1.id, 
-                                    aws_subnet.phitron_vpc_pub2.id  ]
+    subnets                     = [ aws_subnet.vpc_pub1.id, 
+                                    aws_subnet.vpc_pub1.id  ]
     security_groups             = [ aws_security_group.lb_security_group.id ]
 
     # listener {
