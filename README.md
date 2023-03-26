@@ -1,4 +1,4 @@
-# IaCs with Terraform
+# IACs with Terraform (AWS Terraform Templates)
  Testing and learning Terraform Infrastructure As Code with AWS services
 
 -----------
@@ -14,49 +14,53 @@
 ----------
 
 #### Making aws infrastructures with Terraform:
-* create s3 bucket  (tested)
-* python file -> zip -> up to s3 -> create a lambda function
-* AWS API Gateway Rest API with Lambda
-* Dynamodb scan, perform query using Python Lambda 
-* Dynamodb PutItem using Python Lambda 
-* Dynamodb data manipulation with Python
-* lambda create ec2 instance 
-* lambda start ec2 instance
-* ec2 provision local files
-* read, delete sqs message
-* step function with lambda
-* Packer - create AMI
-* lambda launch ec2
-* step function state machine with lambdas
-* s3 and event-bridge
-* terraform read environment variables
+ * create s3 bucket  (tested)
+ * python file -> zip -> up to s3 -> create a lambda function
+ * AWS API Gateway Rest API with Lambda
+ * Dynamodb scan, perform query using Python Lambda 
+ * Dynamodb PutItem using Python Lambda 
+ * Dynamodb data manipulation with Python
+ * lambda create ec2 instance 
+ * lambda start ec2 instance
+ * ec2 provision local files
+ * read, delete sqs message
+ * step function with lambda
+ * Packer - create AMI
+ * lambda launch ec2
+ * step function state machine with lambdas
+ * s3 and event-bridge
+ * terraform read environment variables
+ * Classic Load Balancer with Autoscale
+ * Application Load Balancer
+ * Terraform and docker ec2
 
 #### May be next (just... may be)
-* (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
-* (NEXT) EC2
-* (NEXT) API Gatway -> SNS -> Lambda
-* (NEXT) Fully functional Serverless Application
+ * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
+ * (NEXT) EC2
+ * (NEXT) API Gatway -> SNS -> Lambda
+ * (NEXT) Fully functional Serverless Application
 
 #### Projects
-* Idiot API: a serverless application that returns random illogical responses to irritate you.
+ * AWS autoscale and load balancing with route53 (clb and alb)
+ * Idiot API: a serverless application that returns random illogical responses to irritate you.
 Tech: APIGW, Lambda, S3, CloudWatch, Python3
 
 
 and so on....
 This is an incremental process of making things from the beginning. Learn while making!
-The codes are tested by me. But I can not assure that they will run on your world/devices.
+The codes are tested by me. But I can not assure that they will run on your world/devices. I wish we lived in a perfect world!
 
 To run -
 
-`$ terraform init`
+ `$ terraform init`
 
-`$ terraform plan`
+ `$ terraform plan`
 
-`$ terraform apply`
+ `$ terraform apply`
 
 If you wish to delete infrastructures after playing:
  
-`$ terraform destroy`
+ `$ terraform destroy`
 
 ##### Ashraf Minhaj
 ##### Find me on LinkedIn [Ashraf-Minhaj](https://www.linkedin.com/in/ashraf-minhaj/)
