@@ -1,4 +1,6 @@
 resource "aws_instance" "myEc2" {
+  depends_on              = [ null_resource.provision_img 
+                              ]
   ami                     = "ami-062df10d14676e201"
   instance_type           = "t2.micro"
   # key_name                = "testminserverkeys.pem"
