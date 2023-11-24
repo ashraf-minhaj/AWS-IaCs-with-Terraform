@@ -28,3 +28,4 @@ Aws Lambda n Selenium/Terraform/.terraform.lock.hcl
 1016. tf read env var/.terraform.lock.hcl
 1019. docker-ec2/app/node_modules/*
 1019. docker-ec2/Terraform/.terraform.lock.hcl
+*.tfstate*

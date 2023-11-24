@@ -33,17 +33,18 @@
  * Classic Load Balancer with Autoscale
  * Application Load Balancer
  * Terraform and docker ec2
+ * ECR ECS DOCKER FARGATE
 
-#### May be next (just... may be)
+<!-- #### May be next (just... may be)
  * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
  * (NEXT) EC2
  * (NEXT) API Gatway -> SNS -> Lambda
- * (NEXT) Fully functional Serverless Application
+ * (NEXT) Fully functional Serverless Application -->
 
-#### Projects
+<!-- #### Projects
  * AWS autoscale and load balancing with route53 (clb and alb)
  * Idiot API: a serverless application that returns random illogical responses to irritate you.
-Tech: APIGW, Lambda, S3, CloudWatch, Python3
+Tech: APIGW, Lambda, S3, CloudWatch, Python3 -->
 
 
 and so on....
