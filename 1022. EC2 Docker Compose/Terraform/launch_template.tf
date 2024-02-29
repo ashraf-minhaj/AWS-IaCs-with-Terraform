@@ -85,24 +85,24 @@ data "cloudinit_config" "config" {
     content      = <<-EOF
         #!/bin/bash
         cd /home/ec2-user/
-        sudo yum update
+        sudo yum update -y 
         sudo yum install docker -y
-        sudo yum install python3-pip -y
-        sudo pip3 install docker-compose
-        sleep 20
-
+        sudo service docker start 
+        sudo usermod -a -G docker ec2-user 
         sudo systemctl enable docker.service
         sudo systemctl start docker.service
 
-        cd /home/ec2-user/
+        sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+        sudo chmod +x /usr/local/bin/docker-compose
+        # docker-compose version
+
         touch i_ran.txt
         # sudo curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
         # sudo unzip awscliv2.zip
         # sudo ./aws/install
         
         # sudo docker login --username=user --password-stdin < dockerhub_token.txt
-        sudo docker compose -e TAG=${local.docker_image_tag} up 
-        # sudo ansible-playbook -e "env=${var.component_postfix} discord_webhook=${var.discord_webhook} docker_image_tag=${local.docker_image_tag} port=${var.ec2_ingress_port} dockerhub_token=${var.dockerhub_token}" init.yml
+        sudo -E TAG=${local.docker_image_tag} docker-compose up
         EOF
   }
 }
@@ -151,3 +151,4 @@ resource "aws_launch_template" "machine_template" {
     env = "${var.component_postfix}"
   }
 }
+

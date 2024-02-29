@@ -34,6 +34,7 @@
  * Application Load Balancer
  * Terraform and docker ec2
  * ECR ECS DOCKER FARGATE
+ * Provision and Run Docker Compose on ec2
 
 <!-- #### May be next (just... may be)
  * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
