@@ -1,5 +1,5 @@
-# IACs with Terraform (AWS Terraform Templates)
- Testing and learning Terraform Infrastructure As Code with AWS services
+# IACs with Terraform
+ Diffrente AWS Infrastructure resources written with Terraform.
 
 -----------
 
@@ -13,9 +13,9 @@
 
 ----------
 
-#### Making aws infrastructures with Terraform:
- * create s3 bucket  (tested)
- * python file -> zip -> up to s3 -> create a lambda function
+# List Of Infrastructures Making aws infrastructures with Terraform:
+ * create s3 bucket
+ * create a lambda function (source code -> zip -> up to s3 -> lambda)
  * AWS API Gateway Rest API with Lambda
  * Dynamodb scan, perform query using Python Lambda 
  * Dynamodb PutItem using Python Lambda 
@@ -35,6 +35,7 @@
  * Terraform and docker ec2
  * ECR ECS DOCKER FARGATE
  * Provision and Run Docker Compose on ec2
+ * VPC with NAT Gateway and eIP
 
 <!-- #### May be next (just... may be)
  * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
