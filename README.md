@@ -1,5 +1,5 @@
 # IACs with Terraform
- Diffrente AWS Infrastructure resources written with Terraform.
+ Different AWS Infrastructure resources written with Terraform.
 
 -----------
 
@@ -33,9 +33,10 @@
  * Classic Load Balancer with Autoscale
  * Application Load Balancer
  * Terraform and docker ec2
- * ECR ECS DOCKER FARGATE
  * Provision and Run Docker Compose on ec2
  * VPC with NAT Gateway and eIP
+ * ECR ECS ECR FARGATE
+ * ECR ECS DOCKER EC2
 
 <!-- #### May be next (just... may be)
  * (NEXT) __Project:__ BackBencher Replies API (API Gateway, Lambda, Dynamodb)
