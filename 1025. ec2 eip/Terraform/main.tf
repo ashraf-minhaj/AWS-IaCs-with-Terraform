@@ -9,5 +9,9 @@ terraform {
       version = "~> 5.17.0"
     }
   }
-  # backend "s3" { }
+  backend "s3" {
+    bucket = "mentors-demo"
+    key = "dev"
+    region = "ap-south-1"
+   }
 }
