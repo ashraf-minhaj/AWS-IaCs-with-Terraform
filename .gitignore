@@ -31,3 +31,4 @@ Aws Lambda n Selenium/Terraform/.terraform.lock.hcl
 *.tfstate*
 .terraform.*
 .terraform
+output.json
