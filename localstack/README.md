@@ -24,6 +24,10 @@
     ```bash
     aws --endpoint-url=http://localhost:4566 s3 ls
     ```
+- list lambdas -
+    ```bash
+    aws --endpoint-url=http://localhost:4566 --region us-east-1 lambda list-functions
+    ```
 - Run Lambda -
     ```bash
     aws --endpoint-url=http://localhost:4566 --region us-east-1 lambda invoke --function-name my-test-lambda output.json
