@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Service Connect Test</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    input, button {
+      padding: 10px;
+      width: 100%;
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h2>ECS Service Connect Tester</h2>
+  <input type="text" id="urlInput" placeholder="Enter internal service URL (e.g., http://service-name:8080)">
+  <button id="connectBtn">Connect</button>
+  <h3>Response:</h3>
+  <pre id="responseBox">No data yet.</pre>
+
+  <script>
+    document.getElementById('connectBtn').addEventListener('click', async () => {
+      const url = document.getElementById('urlInput').value;
+      const responseBox = document.getElementById('responseBox');
+      responseBox.textContent = "Connecting...";
+      try {
+        const res = await fetch(url);
+        const text = await res.text();
+        responseBox.textContent = text;
+      } catch (err) {
+        responseBox.textContent = "Error: " + err.message;
+      }
+    });
+  </script>
+</body>
+</html>
