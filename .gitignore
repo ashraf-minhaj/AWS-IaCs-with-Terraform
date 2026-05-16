@@ -32,3 +32,4 @@ Aws Lambda n Selenium/Terraform/.terraform.lock.hcl
 .terraform.*
 .terraform
 output.json
+1027. EKS IRSA n Pod Identity/data
