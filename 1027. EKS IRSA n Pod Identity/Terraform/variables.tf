@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "endpoint" {
   type    = string
-  default = "http://localhost:4566"
+  default = "http://localhost:4567"
 }
 
 variable "component_prefix" {

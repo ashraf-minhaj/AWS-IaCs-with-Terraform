@@ -1,4 +1,4 @@
-This project is being tested on floci.
+# This project is being tested on floci.
 
 Deploy a local floci env -
 
@@ -7,6 +7,7 @@ Deploy a local floci env -
 docker compose up -d
 ```
 
+CLI test
 ```
 aws --endpoint-url http://localhost:4566 \
 eks create-cluster \

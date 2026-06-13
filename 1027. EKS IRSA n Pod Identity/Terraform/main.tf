@@ -10,6 +10,7 @@ provider "aws" {
 
   endpoints {
     iam     = var.endpoint
+    # vpc     = var.endpoint
     sts     = var.endpoint
     ec2     = var.endpoint
     eks     = var.endpoint
@@ -24,11 +25,4 @@ terraform {
       version = "~> 5.17.0"
     }
   }
-  # backend "s3" {
-  #   endpoint     = "http://localhost:4566"
-  #   bucket       = "test-infra-state-store"
-  #   key          = "test"
-  #   region       = "ap-south-1"
-  #   use_lockfile = true
-  # }
 }
